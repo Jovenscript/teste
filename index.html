@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bíblioteca de Treino</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Guia de Exercícios e Anatomia</h1>
+        <p>Selecione o grupo muscular para carregar os movimentos</p>
+    </header>
+
+    <!-- Botões para filtrar. Note o "data-muscle" que vamos puxar no JS -->
+   <nav id="muscle-filters">
+        <button data-muscle="chest">Peito (Push)</button>
+        <button data-muscle="back">Costas (Pull)</button>
+        <button data-muscle="legs">Pernas (Legs)</button>
+        <button data-muscle="shoulders">Ombros</button>
+        <button data-muscle="biceps">Bíceps</button>
+        <button data-muscle="triceps">Tríceps</button>
+    </nav>
+
+    <!-- É aqui dentro que o JavaScript vai injetar os cards -->
+    <main id="exercise-container" class="grid-container">
+        <p class="welcome-text">Escolha um grupo muscular acima para começar.</p>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
