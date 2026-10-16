@@ -6,7 +6,7 @@ async function fetchExercises(muscle) {
 
     try {
         // Colocamos ?limit=100 para trazer mais exercícios de uma vez da API
-        const response = await fetch('https://oss.exercisedb.dev/api/v1/exercises?limit=100');
+      const response = await fetch('https://oss.exercisedb.dev/api/v1/exercises?limit=2000');
         
         if (!response.ok) {
             throw new Error('Falha ao conectar com a API.');
